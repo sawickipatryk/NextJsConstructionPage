@@ -10,7 +10,7 @@ import 'swiper/css/pagination'
 import './styles.css'
 
 // import required modules
-import { Pagination } from 'swiper/modules'
+import { Pagination, Navigation } from 'swiper/modules'
 
 import hero1 from './hero1.jpg'
 import hero2 from './hero2.jpg'
@@ -19,11 +19,14 @@ import theme from '@/app/theme/theme'
 export const HeroSlider = () => {
   return (
     <Swiper
+      slidesPerView={1}
+      loop={true}
       direction={'vertical'}
       pagination={{
         clickable: true
       }}
-      modules={[Pagination]}
+      navigation={true}
+      modules={[Pagination, Navigation]}
       className={'mySwiper'}
     >
       <SwiperSlide>
