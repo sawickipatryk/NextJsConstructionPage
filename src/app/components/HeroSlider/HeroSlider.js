@@ -69,7 +69,8 @@ export const HeroSlider = () => {
         >
           <Box
             sx={{
-              maxWidth: '600px'
+              maxWidth: '600px',
+              padding: '24px'
             }}
           >
             <Typography
@@ -130,7 +131,8 @@ export const HeroSlider = () => {
         >
           <Box
             sx={{
-              maxWidth: '600px'
+              maxWidth: '600px',
+              padding: '24px'
             }}
           >
             <Typography
