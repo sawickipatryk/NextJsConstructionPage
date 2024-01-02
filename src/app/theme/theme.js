@@ -24,19 +24,23 @@ const theme = createTheme({
       white: '#fff'
     },
     primary: {
-      main: '#fff'
+      main: '#FFC436'
     },
     secondary: {
       main: '#fff'
     },
     text: {
       primary: 'rgba(255, 255, 255, 1)',
-      secondary: '#fff'
+      secondary: 'rgba(255, 255, 255, 0.7)'
     },
     background: {
       firstBackgroundColor: '#fff',
       secondBackgroundColor: '#fff',
-      navBarBackgroundColor: '#fff'
+      navBarBackgroundColor: 'rgba(12, 53, 106,0.5)'
+    },
+    gradient: {
+      firstGradient: 'rgba(1, 116, 190,0.5)',
+      secondGradient: 'rgba(255, 196, 54,0.5)'
     }
   },
   shape: {
