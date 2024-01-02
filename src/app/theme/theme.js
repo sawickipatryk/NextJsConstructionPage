@@ -35,7 +35,7 @@ const theme = createTheme({
       subtitle: '#FFC436'
     },
     background: {
-      firstBackgroundColor: '#fff',
+      firstBackgroundColor: '#F6F6F6',
       secondBackgroundColor: '#fff',
       navBarBackgroundColor: 'rgba(7, 25, 82,0.8)',
       navBarMobileBackgroundColor: 'rgba(7, 25, 82,1)'
