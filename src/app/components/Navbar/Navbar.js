@@ -86,7 +86,7 @@ export const Navbar = (props) => {
 
   return (
     <AppBar
-      position={'fixed'}
+      position={'absolute'}
       {...otherProps}
       sx={{
         backgroundColor: 'initial',

@@ -32,6 +32,7 @@ const theme = createTheme({
     text: {
       primary: 'rgba(255, 255, 255, 1)',
       secondary: 'rgba(255, 255, 255, 0.6)',
+      third: 'rgba(1, 1, 1, 0.6)',
       subtitle: '#FFC436'
     },
     background: {
@@ -56,47 +57,47 @@ const theme = createTheme({
     fontWeightLight: '300',
     h1: {
       fontSize: '48px',
-      color: 'rgba(255, 255, 255, 1)'
+      color: 'rgba(1,1,1,1)'
     },
     h2: {
       fontSize: '42px',
-      color: 'rgba(255, 255, 255, 1)'
+      color: 'rgba(1,1,1,1)'
     },
     h3: {
       fontSize: '38px',
-      color: 'rgba(255, 255, 255, 1)'
+      color: 'rgba(1,1,1,1)'
     },
     h4: {
       fontSize: '32px',
-      color: 'rgba(255, 255, 255, 1)'
+      color: 'rgba(1,1,1,1)'
     },
     h5: {
       fontSize: '28px',
-      color: 'rgba(255, 255, 255, 1)'
+      color: 'rgba(1,1,1,1)'
     },
     h6: {
       fontSize: '22px',
-      color: 'rgba(255, 255, 255, 1)'
+      color: 'rgba(1,1,1,1)'
     },
     subtitle1: {
       fontSize: '28px',
-      color: 'rgba(255, 255, 255, 1)'
+      color: 'rgba(1,1,1,1)'
     },
     subtitle2: {
       fontSize: '14px',
-      color: 'rgba(255, 255, 255, 1)'
+      color: 'rgba(1,1,1,1)'
     },
     body1: {
       fontSize: '18px',
-      letterSpacing: '0.3px',
-      color: 'rgba(255, 255, 255, 1)'
+      letterSpacing: '0.3px'
+
     },
     body2: {
       fontSize: '17px'
     },
     caption: {
       fontSize: '12px',
-      color: 'rgba(255, 255, 255, 1)'
+      color: 'rgba(1,1,1,1)'
     },
     button: {
       fontSize: '16px'
