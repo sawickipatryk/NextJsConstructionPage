@@ -37,7 +37,8 @@ const theme = createTheme({
     background: {
       firstBackgroundColor: '#fff',
       secondBackgroundColor: '#fff',
-      navBarBackgroundColor: 'rgba(7, 25, 82,0.8)'
+      navBarBackgroundColor: 'rgba(7, 25, 82,0.8)',
+      navBarMobileBackgroundColor: 'rgba(7, 25, 82,1)'
     },
     gradient: {
       firstGradient: 'rgba(7, 25, 82,0.7)',

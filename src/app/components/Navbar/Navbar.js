@@ -199,7 +199,7 @@ export const Navbar = (props) => {
                               variant={'caption'}
                               color={theme.palette.text.secondary}
                             >
-                              {info.primaryText}
+                              {info.secondaryText}
                             </Typography>
                           }
                         />
@@ -238,73 +238,180 @@ export const Navbar = (props) => {
             </Box>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size={'large'}
-              aria-label={'account of current user'}
-              aria-controls={'menu-appbar'}
-              aria-haspopup={'true'}
-              onClick={handleOpenNavMenu}
-              color={'inherit'}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id={'menu-appbar'}
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left'
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left'
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+          <Box>
+            <Box
               sx={{
-                display: { xs: 'block', md: 'none' }
+                display: 'flex'
               }}
             >
-              {pages.map((page) => (
-                <Button
-                  key={page.id}
-                  href={page.href}
-                  onClick={handleCloseNavMenu}
-                  sx={{
-                    padding: '16px 20px',
-                    color: 'white',
-                    display: 'block',
-                    '&:hover': {
+              <Box
+                sx={{
+                  display: { xs: 'flex', md: 'none' },
+                  flexGrow: 1
+                }}
+              >
+                <IconButton
+                  aria-label={'account of current user'}
+                  aria-controls={'menu-appbar'}
+                  aria-haspopup={'true'}
+                  onClick={handleOpenNavMenu}
+                >
+                  <MenuIcon
+                    fontSize={'large'}
+                    sx={{
                       color: theme.palette.primary.main
+                    }}
+                  />
+                </IconButton>
+                <Menu
+                  id={'menu-appbar'}
+                  anchorEl={anchorElNav}
+                  anchorOrigin={{
+                    vertical: 'bottom',
+                    horizontal: 'left'
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'left'
+                  }}
+                  open={Boolean(anchorElNav)}
+                  onClose={handleCloseNavMenu}
+                  sx={{
+                    display: 'block',
+                    '& .MuiMenu-paper': {
+                      width: '100%',
+                      backgroundColor: theme.palette.background.navBarMobileBackgroundColor
                     }
                   }}
                 >
-                  {page.buttonText}
-                </Button>
-              ))}
-            </Menu>
+                  {pages.map((page) => (
+                    <Button
+                      key={page.id}
+                      href={page.href}
+                      onClick={handleCloseNavMenu}
+                      sx={{
+                        padding: '16px 20px',
+                        color: 'white',
+                        display: 'block',
+                        '&:hover': {
+                          color: theme.palette.primary.main
+                        }
+                      }}
+                    >
+                      {page.buttonText}
+                    </Button>
+                  ))}
+                </Menu>
+              </Box>
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  display: { xs: 'flex', md: 'none' },
+                  alignItems: 'center'
+                }}
+              >
+                <AdbIcon
+                  fontSize={'large'}
+                  sx={{
+                    marginRight: '10px',
+                    color: theme.palette.primary.main
+                  }}
+                />
+                <Typography
+                  variant={'h6'}
+                  noWrap
+                  component={'a'}
+                  href={'/'}
+                  sx={{
+                    textDecoration: 'none'
+                  }}
+                >
+                  LOGO
+                </Typography>
+              </Box>
+            </Box>
+
+            <List
+              sx={{
+                display: { xs: 'flex', md: 'none' },
+                padding: '0px',
+                alignItems: 'center',
+                justifyContent: 'center'
+
+              }}
+            >
+              {
+                  infoArrays.map((info) => {
+                    return (
+                      <ListItem
+                        key={info.id}
+                        sx={{
+
+                          '&:last-of-type': {
+                            marginRight: '0px',
+                            '& .MuiTypography-root': {
+                              paddingRight: '0px'
+                            }
+                          },
+                          padding: '0px',
+                          margin: '0px',
+                          marginRight: '10px',
+                          width: '100%',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          flexDirection: 'column',
+                          textAlign: 'center'
+                        }}
+                      >
+                        {
+                          info.icon === 'phone'
+                            ? <PhoneIcon
+                                sx={{
+                                  color: theme.palette.primary.main
+                                }}
+                              />
+                            : info.icon === 'home'
+                              ? <HomeIcon
+                                  sx={{
+                                    color: theme.palette.primary.main
+                                  }}
+                                />
+                              : info.icon === 'pin'
+                                ? <FmdGoodIcon
+                                    sx={{
+                                      color: theme.palette.primary.main
+                                    }}
+                                  />
+                                : null
+                        }
+                        <ListItemText
+                          primary={
+                            <>
+                              <Typography
+                                variant={'subtitle2'}
+                              >
+                                {info.primaryText}
+                              </Typography>
+
+                            </>
+                          }
+                          secondary={
+                            <Typography
+                              variant={'caption'}
+                              color={theme.palette.text.secondary}
+                            >
+                              {info.secondaryText}
+                            </Typography>
+                          }
+                        />
+                      </ListItem>
+                    )
+                  })
+                }
+            </List>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant={'h5'}
-            noWrap
-            component={'a'}
-            href={'#app-bar-with-responsive-menu'}
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none'
-            }}
-          >
-            LOGO
-          </Typography>
 
         </Toolbar>
       </Container>
