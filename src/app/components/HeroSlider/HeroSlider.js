@@ -63,11 +63,8 @@ export const HeroSlider = () => {
         <Box
           position={'absolute'}
           sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            maxWidth: '1200px',
-            width: '100%'
+            width: '100%',
+            maxWidth: '1200px'
           }}
         >
           <Box
@@ -127,11 +124,8 @@ export const HeroSlider = () => {
         <Box
           position={'absolute'}
           sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            maxWidth: '1200px',
-            width: '100%'
+            width: '100%',
+            maxWidth: '1200px'
           }}
         >
           <Box
