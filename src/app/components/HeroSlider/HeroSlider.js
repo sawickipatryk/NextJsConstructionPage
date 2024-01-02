@@ -10,7 +10,7 @@ import 'swiper/css/pagination'
 import './styles.css'
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
 import hero1 from './hero1.jpg'
 import hero2 from './hero2.jpg'
@@ -22,11 +22,15 @@ export const HeroSlider = () => {
       slidesPerView={1}
       loop={true}
       direction={'vertical'}
+      autoplay={{
+        delay: 3500,
+        disableOnInteraction: false
+      }}
       pagination={{
         clickable: true
       }}
       navigation={true}
-      modules={[Pagination, Navigation]}
+      modules={[Autoplay, Pagination, Navigation]}
       className={'mySwiper'}
     >
       <SwiperSlide>
