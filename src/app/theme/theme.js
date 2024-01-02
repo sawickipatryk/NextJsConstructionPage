@@ -31,15 +31,16 @@ const theme = createTheme({
     },
     text: {
       primary: 'rgba(255, 255, 255, 1)',
-      secondary: 'rgba(255, 255, 255, 0.7)'
+      secondary: 'rgba(255, 255, 255, 0.7)',
+      subtitle: '#FFC436'
     },
     background: {
       firstBackgroundColor: '#fff',
       secondBackgroundColor: '#fff',
-      navBarBackgroundColor: 'rgba(12, 53, 106,0.5)'
+      navBarBackgroundColor: 'rgba(7, 25, 82,0.7)'
     },
     gradient: {
-      firstGradient: 'rgba(1, 116, 190,0.5)',
+      firstGradient: 'rgba(7, 25, 82,0.7)',
       secondGradient: 'rgba(255, 196, 54,0.5)'
     }
   },
