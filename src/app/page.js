@@ -3,6 +3,7 @@
 import Achievements from './components/Achievements'
 import Hero from './components/Hero'
 import OurServices from './components/OurServices'
+import WhyUs from './components/WhyUs'
 
 export const Home = () => {
   return (
@@ -10,6 +11,7 @@ export const Home = () => {
       <Hero/>
       <Achievements/>
       <OurServices/>
+      <WhyUs/>
     </>
   )
 }
