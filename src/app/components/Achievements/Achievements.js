@@ -13,7 +13,8 @@ export const Achievements = (props) => {
       sx={{
         ...sx,
         marginTop: '-60px',
-        zIndex: 9999
+        zIndex: 10,
+        position: 'relative'
       }}
       {...otherProps}
     >
