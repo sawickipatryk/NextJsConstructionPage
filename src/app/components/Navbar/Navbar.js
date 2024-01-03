@@ -130,7 +130,8 @@ export const Navbar = (props) => {
                   component={'a'}
                   href={'/'}
                   sx={{
-                    textDecoration: 'none'
+                    textDecoration: 'none',
+                    color: 'white'
                   }}
                 >
                   LOGO
@@ -188,6 +189,9 @@ export const Navbar = (props) => {
                             <>
                               <Typography
                                 variant={'subtitle2'}
+                                sx={{
+                                  color: 'white'
+                                }}
                               >
                                 {info.primaryText}
                               </Typography>
@@ -238,7 +242,12 @@ export const Navbar = (props) => {
             </Box>
           </Box>
 
-          <Box>
+          <Box
+            sx={{
+              display: { xs: 'block', md: 'none' },
+              width: '100%'
+            }}
+          >
             <Box
               sx={{
                 display: 'flex'
@@ -246,7 +255,6 @@ export const Navbar = (props) => {
             >
               <Box
                 sx={{
-                  display: { xs: 'flex', md: 'none' },
                   flexGrow: 1
                 }}
               >
@@ -306,8 +314,8 @@ export const Navbar = (props) => {
               </Box>
               <Box
                 sx={{
+                  display: 'flex',
                   flexGrow: 1,
-                  display: { xs: 'flex', md: 'none' },
                   alignItems: 'center'
                 }}
               >
@@ -324,7 +332,8 @@ export const Navbar = (props) => {
                   component={'a'}
                   href={'/'}
                   sx={{
-                    textDecoration: 'none'
+                    textDecoration: 'none',
+                    color: 'white'
                   }}
                 >
                   LOGO
@@ -334,7 +343,7 @@ export const Navbar = (props) => {
 
             <List
               sx={{
-                display: { xs: 'flex', md: 'none' },
+                display: 'flex',
                 padding: '0px',
                 alignItems: 'center',
                 justifyContent: 'center'
@@ -391,6 +400,9 @@ export const Navbar = (props) => {
                             <>
                               <Typography
                                 variant={'subtitle2'}
+                                sx={{
+                                  color: 'white'
+                                }}
                               >
                                 {info.primaryText}
                               </Typography>
