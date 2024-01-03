@@ -59,17 +59,80 @@ export const Achievements = (props) => {
             item
             xs={12}
             md={3.5}
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexDirection: 'column',
+              backgroundColor: 'white',
+              padding: '40px',
+              textAlign: 'center',
+              [theme.breakpoints.up('md')]: {
+                padding: '40px'
+              }
+            }}
           >
-            <Typography>
-              More then
+            <Typography
+              variant={'h2'}
+              fontWeight={theme.typography.fontWeightBold}
+              sx={{
+                color: theme.palette.primary.main,
+                fontSize: '80px !important'
+              }}
+            >
+
+              <CountUp
+                start={0}
+                end={200}
+                delay={1}
+              />
             </Typography>
-            <CountUp end={200} />
+            <Typography
+              variant={'body1'}
+              fontWeight={theme.typography.fontWeightBold}
+            >
+              Succesfully completed projects
+            </Typography>
           </Grid>
           <Grid
             item
             xs={12}
             md={3.5}
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexDirection: 'column',
+              backgroundColor: 'white',
+              padding: '40px',
+              textAlign: 'center',
+              [theme.breakpoints.up('md')]: {
+                padding: '51px'
+              }
+            }}
           >
+            <Typography
+              variant={'h2'}
+              fontWeight={theme.typography.fontWeightBold}
+              sx={{
+                color: theme.palette.primary.main,
+                fontSize: '80px !important'
+              }}
+            >
+
+              <CountUp
+                start={0}
+                end={24}
+                delay={1}
+
+              />
+            </Typography>
+            <Typography
+              variant={'body1'}
+              fontWeight={theme.typography.fontWeightBold}
+            >
+              Countries around the world
+            </Typography>
           </Grid>
         </Grid>
       </Container>
