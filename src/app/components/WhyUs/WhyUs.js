@@ -73,6 +73,7 @@ export const WhyUs = (props) => {
               <Grid
                 item
                 xs={12}
+                sm={6}
                 md={6}
                 sx={{
                   display: 'flex',
@@ -114,6 +115,7 @@ export const WhyUs = (props) => {
               <Grid
                 item
                 xs={12}
+                sm={6}
                 md={6}
                 sx={{
                   zIndex: 999,

@@ -39,7 +39,8 @@ const theme = createTheme({
       firstBackgroundColor: '#F6F6F6',
       secondBackgroundColor: '#fff',
       navBarBackgroundColor: 'rgba(7, 25, 82,0.8)',
-      navBarMobileBackgroundColor: 'rgba(7, 25, 82,1)'
+      navBarMobileBackgroundColor: 'rgba(7, 25, 82,1)',
+      footerBackgroundColor: 'rgba(1, 1, 1,1)'
     },
     gradient: {
       firstGradient: 'rgba(7, 25, 82,0.7)',
@@ -101,6 +102,17 @@ const theme = createTheme({
     },
     button: {
       fontSize: '16px'
+    }
+  },
+  components: {
+    MuiSvgIcon: {
+      styleOverrides: {
+        root: {
+          color: '#FFC436',
+          fontSize: '25px',
+          marginRight: '10px'
+        }
+      }
     }
   }
 

@@ -96,7 +96,7 @@ export const OurServices = (props) => {
                 key={service.id}
                 item
                 xs={12}
-                sm={12}
+                sm={6}
                 md={4}
 
               >

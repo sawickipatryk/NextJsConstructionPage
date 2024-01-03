@@ -27,6 +27,7 @@ export const Achievements = (props) => {
           <Grid
             item
             xs={12}
+            sm={6}
             md={5}
             sx={{
               backgroundColor: theme.palette.primary.main,
@@ -59,6 +60,7 @@ export const Achievements = (props) => {
           <Grid
             item
             xs={12}
+            sm={6}
             md={3.5}
             sx={{
               display: 'flex',
@@ -81,10 +83,9 @@ export const Achievements = (props) => {
                 fontSize: '80px !important'
               }}
             >
-
               <CountUp
                 start={0}
-                end={200}
+                end={100}
                 delay={1}
               />
             </Typography>
