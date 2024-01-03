@@ -1,6 +1,6 @@
 'use client'
 import { Box, Container, Grid, Typography, Button, ListItem, ListItemText } from '@mui/material'
-import theme from '@/app/theme/theme'
+import theme from '@/theme/theme'
 
 import InstagramIcon from '@mui/icons-material/Instagram'
 import FacebookIcon from '@mui/icons-material/Facebook'

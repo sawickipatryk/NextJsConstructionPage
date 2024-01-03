@@ -1,9 +1,8 @@
 'use client'
-
-import Achievements from './components/Achievements'
-import Hero from './components/Hero'
-import OurServices from './components/OurServices'
-import WhyUs from './components/WhyUs'
+import Achievements from '../components/Achievements'
+import Hero from '../components/MainHero'
+import OurServices from '../components/ourServices'
+import WhyUs from '../components/WhyUs'
 
 export const Home = () => {
   return (

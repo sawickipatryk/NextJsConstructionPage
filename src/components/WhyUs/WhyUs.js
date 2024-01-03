@@ -12,7 +12,7 @@ import {
   TimelineContent,
   TimelineDot
 } from '@mui/lab'
-import theme from '@/app/theme/theme'
+import theme from '@/theme/theme'
 import Image from 'next/image'
 
 const timelineArray = [

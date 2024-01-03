@@ -14,7 +14,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
 import hero1 from './hero1.jpg'
 import hero2 from './hero2.jpg'
-import theme from '@/app/theme/theme'
+import theme from '@/theme/theme'
 
 export const HeroSlider = () => {
   return (

@@ -10,7 +10,7 @@ import {
 } from '@mui/material'
 import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService'
 import service1 from './service1.jpg'
-import theme from '@/app/theme/theme'
+import theme from '@/theme/theme'
 
 const servicesArray = [
   {

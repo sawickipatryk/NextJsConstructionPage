@@ -18,7 +18,7 @@ import PhoneIcon from '@mui/icons-material/Phone'
 import HomeIcon from '@mui/icons-material/Home'
 import FmdGoodIcon from '@mui/icons-material/FmdGood'
 import MenuIcon from '@mui/icons-material/Menu'
-import theme from '@/app/theme/theme'
+import theme from '@/theme/theme'
 
 const pages = [
   {
@@ -29,7 +29,7 @@ const pages = [
   {
     id: 2,
     buttonText: 'OUR PROJECTS',
-    href: '/projects'
+    href: '/ourProjects'
   },
   {
     id: 3,

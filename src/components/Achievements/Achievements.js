@@ -1,4 +1,4 @@
-import theme from '@/app/theme/theme'
+import theme from '@/theme/theme'
 import { Box, Container, Grid, Typography } from '@mui/material'
 import CountUp from 'react-countup'
 

@@ -1,6 +1,6 @@
 import HeroSlider from '../HeroSlider'
 
-export const Hero = (props) => {
+export const MainHero = (props) => {
   return (
     <>
       <HeroSlider/>
@@ -8,4 +8,4 @@ export const Hero = (props) => {
   )
 }
 
-export default Hero
+export default MainHero
