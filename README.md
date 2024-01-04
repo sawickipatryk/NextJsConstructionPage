@@ -1,7 +1,7 @@
 # Nextjs Construction Page
 
 ## General info
-This project is restuarant page.
+This project is construction page.
 	
 ## Technologies
 Project is created with:
